@@ -30,7 +30,7 @@ body{
 
 #paw2{
     opacity: 0;
-    animation: pawstep 5s forwards;    
+    animation: pawstep 10s forwards;    
     height: 40px;
     position: relative;
     mix-blend-mode: multiply; filter: blur(1px)

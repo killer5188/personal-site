@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+.cont{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40p;/* 3 columns, each 40px cuz thats the size of my image wide 2d arrarys i think */
+    background-image: 
+        linear-gradient(to right, lightgrey 1px, transparent 1px), /*this is to show the grid so that i can see where to place stuff*/
+        linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+    background-size: 40px 40px; /* adjust the grid size so that each square is the size i want */
+    background-color: red;
+
+
+
+}
+    
+    
+
+#paw1{
+    opacity: 0;
+    animation: pawfade 3s forwards ;
+    position: relative;
+    height: 40px;
+}
+
+#paw2{
+    opacity: 0;
+    animation: pawstep 5s forwards;    
+    height: 40px;
+    position: relative;
+    mix-blend-mode: multiply; filter: blur(1px)
+}
+
+@keyframes pawfade {
+    0% { opacity: 0; }
+    50% { opacity: 1; filter: drop-shadow(0 5px 5px rgba(0,0,0,0.5));}
+    100% { opacity: 0; }
+}
+
+@keyframes pawstep {
+    0% {opacity: 1;}
+    80% {opacity: 10;}
+    100% { opacity: 0;}
+}
